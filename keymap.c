@@ -12,9 +12,9 @@ enum katana60_layers {
 #define NUMPAD  DF(_NUMPAD)
 #define QWERTY  DF(_QWERTY)
 #define MOU_SCL LT(_MOUSE, KC_SCLN)     // Turn on _MOUSE layer when held, ; when tapped
-#define SYM_GRV LT(_SYMBOL, KC_GRV)     // Left Alt when held, ` when tapped
-#define SYM_ENT LT(_SYMBOL, KC_ENT)    	// Turn on _SYMBOL layer when held, Enter when tapped
-#define CTL_ESC LCTL_T(KC_ESC)         	// Left Control when held, Esc when tapped
+#define SYM_GRV LT(_SYMBOL, KC_GRV)     // Turn on _SYMBOL layer when held, ` when tapped
+#define SYM_ENT LT(_SYMBOL, KC_ENT)     // Turn on _SYMBOL layer when held, Enter when tapped
+#define CTL_ESC LCTL_T(KC_ESC)          // Left Control when held, Esc when tapped
 #define CTL_Z   LCTL_T(KC_Z)            // Left Control when held, z when tapped
 #define CTL_SLS RCTL_T(KC_SLSH)         // Right Control when held, / when tapped
 #define GUI_QUO RGUI_T(KC_QUOT)         // Right Gui when held, " when tapped
