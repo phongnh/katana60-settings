@@ -11,8 +11,6 @@ enum katana60_layers {
 
 #define NUMPAD  DF(_NUMPAD)
 #define QWERTY  DF(_QWERTY)
-#define SYMBOL  MO(_SYMBOL)
-#define MOUSE   MO(_MOUSE)
 #define MOU_SCL LT(_MOUSE, KC_SCLN)     // Turn on _MOUSE layer when held, ; when tapped
 #define SYM_GRV LT(_SYMBOL, KC_GRV)     // Left Alt when held, ` when tapped
 #define SYM_ENT LT(_SYMBOL, KC_ENT)    	// Turn on _SYMBOL layer when held, Enter when tapped
@@ -30,14 +28,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,          KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,     KC_BSPC,
     CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_HOME,          KC_PGUP, KC_H,    KC_J,    KC_K,    KC_L,    MOU_SCL,  GUI_QUO,
     KC_LSFT, CTL_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_DEL,  KC_PGDN, KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_SLS,  SFT_ENT,
-    SYM_GRV, KC_LCTL, KC_LALT, KC_LGUI,                   KC_SPC,  KC_BSPC, SYM_ENT,          KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, SYMBOL
+    SYM_GRV, KC_LCTL, KC_LALT, KC_LGUI,                   KC_SPC,  KC_BSPC, SYM_ENT,          KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, SYM_GRV
 ),
 
 [_NUMPAD] = LAYOUT(
     _______, _______, _______, _______, _______, _______, _______, QWERTY,  KC_PSLS, KC_PAST, KC_PMNS, _______, _______, _______,  _______,
     _______, _______, _______, KC_MS_U, _______, _______, _______,          KC_7,    KC_8,    KC_9,    KC_PPLS, _______, _______,  _______,
     _______, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, _______, _______,          KC_4,    KC_5,    KC_6,    KC_PPLS, _______, _______,  _______,
-    _______, _______, KC_ACL0, KC_ACL1, KC_ACL2, _______, _______, _______, KC_1,    KC_2,    KC_3,    KC_PENT, _______, _______,  _______,
+    _______, _______, _______, _______, _______, _______, _______, _______, KC_1,    KC_2,    KC_3,    KC_PENT, _______, _______,  _______,
     _______, _______, _______, _______,                   KC_BTN1, _______, KC_P0,            KC_PDOT, KC_PENT, _______, _______,  _______
 ),
 
