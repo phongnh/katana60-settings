@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `--------------------------------------------------------------------------------------------------------'
      */
     [_BASE_V4] = LAYOUT(
-        KC_ESC,  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
+        KC_GESC, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,          KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
         CTL_BSP, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_HOME,          KC_PGUP, KC_H,    KC_J,    KC_K,    KC_L,    MOU_SCL, GUI_QUO,
         KC_LSFT, CTL_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_DEL,  KC_PGDN, KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_SLS, SFT_ENT,
@@ -157,7 +157,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `--------------------------------------------------------------------------------------------------------'
      */
     [_BASE_V5] = LAYOUT(
-        KC_ESC,  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
+        KC_GESC, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,          KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
         CTL_BSP, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_HOME,          KC_PGUP, KC_H,    KC_J,    KC_K,    KC_L,    MOU_SCL, GUI_QUO,
         KC_LSFT, CTL_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_DEL,  KC_PGDN, KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_SLS, SFT_ENT,
@@ -199,7 +199,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `--------------------------------------------------------------------------------------------------------'
      */
     [_QWERTY] = LAYOUT(
-        KC_ESC,  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
+        KC_GESC, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,          KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
         CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_HOME,          KC_PGUP, KC_H,    KC_J,    KC_K,    KC_L,    MOU_SCL, GUI_ENT,
         KC_LSFT, CTL_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_DEL,  KC_PGDN, KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_SLS, SFT_QUO,
@@ -220,7 +220,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `--------------------------------------------------------------------------------------------------------'
      */
     [_COLEMAK] = LAYOUT(
-        KC_ESC,  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
+        KC_GESC, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
         KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_LBRC,          KC_RBRC, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC,
         CTL_ESC, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_HOME,          KC_PGUP, KC_H,    KC_N,    KC_E,    KC_I,    MOU_O,   GUI_ENT,
         KC_LSFT, CTL_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_DEL,  KC_PGDN, KC_K,    KC_M,    KC_COMM, KC_DOT,  CTL_SLS, SFT_QUO,
@@ -241,7 +241,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `--------------------------------------------------------------------------------------------------------'
      */
     [_DVORAK] = LAYOUT(
-        KC_ESC,  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_LBRC, KC_RBRC,
+        KC_GESC, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_LBRC, KC_RBRC,
         KC_TAB,  KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_SLSH,          KC_EQL,  KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_BSPC,
         CTL_ESC, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_HOME,          KC_PGUP, KC_D,    KC_H,    KC_T,    KC_N,    MOU_S,   GUI_MIN,
         KC_LSFT, CTL_SCL, KC_Q,    KC_J,    KC_K,    KC_X,    KC_END,  KC_DEL,  KC_PGDN, KC_B,    KC_M,    KC_W,    KC_V,    CTL_Z,   SFT_ENT,
