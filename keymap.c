@@ -8,7 +8,6 @@ enum katana60_layers {
     _BASE_V4,
     _BASE_V5,
     _BASE_V6,
-    _BASE_V7,
     _QWERTY,
     _COLEMAK,
     _DVORAK,
@@ -28,7 +27,6 @@ enum katana60_keycodes {
     BASE_V4,
     BASE_V5,
     BASE_V6,
-    BASE_V7,
     QWERTY,
     COLEMAK,
     DVORAK,
@@ -168,27 +166,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /*
      * ,--------------------------------------------------------------------------------------------------------.
-     * | Esc  |  `   |  1   |  2   |  3   |  4   |  5   | Num  |  6   |  7   |  8   |  9   |  0   |  -   |  =   |
-     * |--------------------------------------------------------------------------------------------------------|
-     * | Tab      |  Q   |  W   |  E   |  R   |  T   |  [   |  ]   |  Y   |  U   |  I   |  O   |  P   |    \    |
-     * |--------------------------------------------------------------------------------------------------------|
-     * | BS    |  A   |  S   |  D   |  F   |  G   | Home |||||| PgUp |  H   |  J   |  K   |  L   |  ;   | Enter |
-     * |--------------------------------------------------------------------------------------------------------|
-     * | Shift|  Z   |  X   |  C   |  V   |  B   | End  | Del  | PgDn |  N   |  M   |  ,   |  .   |  /   |  '   |
-     * |--------------------------------------------------------------------------------------------------------|
-     * | Fn   | Ctrl  |  Alt  |  Cmd  |  Lower / Space  |  BS  |Raise / Space| Left | Down |  Up  |Right | App  |
-     * `--------------------------------------------------------------------------------------------------------'
-     */
-    [_BASE_V6] = LAYOUT(
-        KC_ESC,  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
-        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,          KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
-        CTL_BSP, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_HOME,          KC_PGUP, KC_H,    KC_J,    KC_K,    KC_L,    MOU_SCL, GUI_ENT,
-        KC_LSFT, CTL_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_DEL,  KC_PGDN, KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_SLS, SFT_QUO,
-        ADJ_TIL, KC_LCTL, KC_LALT, KC_LGUI,          LWR_SPC,          KC_BSPC,      RSE_SPC,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ADJ_GRV
-    ),
-
-    /*
-     * ,--------------------------------------------------------------------------------------------------------.
      * | BS   |  `   |  1   |  2   |  3   |  4   |  5   | Num  |  6   |  7   |  8   |  9   |  0   |  -   |  =   |
      * |--------------------------------------------------------------------------------------------------------|
      * | Tab      |  Q   |  W   |  E   |  R   |  T   |  [   |  ]   |  Y   |  U   |  I   |  O   |  P   |    \    |
@@ -197,15 +174,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |--------------------------------------------------------------------------------------------------------|
      * | Shift|  Z   |  X   |  C   |  V   |  B   | End  | Del  | PgDn |  N   |  M   |  ,   |  .   |  /   | Enter|
      * |--------------------------------------------------------------------------------------------------------|
-     * | Fn   | Ctrl  |  Alt  |  Cmd  |  Lower / Space  |  BS  |Raise / Space| Left | Down |  Up  |Right | App  |
+     * | Fn   | Ctrl  |  Alt  |  Cmd  |Lower / Backspace|  BS  |Raise / Space| Left | Down |  Up  |Right | App  |
      * `--------------------------------------------------------------------------------------------------------'
      */
-    [_BASE_V7] = LAYOUT(
+    [_BASE_V6] = LAYOUT(
         KC_BSPC, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    NUMPAD,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,          KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
         CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_HOME,          KC_PGUP, KC_H,    KC_J,    KC_K,    KC_L,    MOU_SCL, GUI_QUO,
         KC_LSFT, CTL_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_DEL,  KC_PGDN, KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_SLS, SFT_ENT,
-        ADJ_TIL, KC_LCTL, KC_LALT, KC_LGUI,          LWR_SPC,          KC_BSPC,      RSE_SPC,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ADJ_GRV
+        ADJ_TIL, KC_LCTL, KC_LALT, KC_LGUI,          LWR_BSP,          KC_BSPC,      RSE_SPC,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ADJ_GRV
     ),
 
     /*
@@ -369,7 +346,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `--------------------------------------------------------------------------------------------------------'
      */
     [_MOUSE] = LAYOUT(
-        _______, _______, BASE_V1, BASE_V2, BASE_V3, BASE_V4, BASE_V5, _______, BASE_V6, BASE_V7, _______, _______, _______, _______,  _______,
+        _______, _______, BASE_V1, BASE_V2, BASE_V3, BASE_V4, BASE_V5, _______, BASE_V6, _______, _______, _______, _______, _______,  _______,
         _______, _______, KC_BTN3, KC_MS_U, KC_BTN2, _______, _______,          _______, _______, KC_BTN2, KC_WH_U, KC_BTN3, _______,  _______,
         KC_CAPS, KC_BTN1, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, AG_NORM,          AG_SWAP, KC_BTN1, KC_WH_L, KC_WH_D, KC_WH_R, _______,  _______,
         _______, _______, _______, _______, _______, _______, QWERTY,  COLEMAK, DVORAK,  _______, _______, _______, _______, _______,  _______,
@@ -443,12 +420,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case BASE_V6:
         if (record->event.pressed) {
             set_single_persistent_default_layer(_BASE_V6);
-        }
-        return false;
-        break;
-    case BASE_V7:
-        if (record->event.pressed) {
-            set_single_persistent_default_layer(_BASE_V7);
         }
         return false;
         break;
